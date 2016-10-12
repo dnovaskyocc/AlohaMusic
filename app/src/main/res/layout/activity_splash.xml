@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_splash"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.orangecoastcollege.cs273.dnovasky.alohamusic.SplashActivity"
+    android:background="@android:color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/splash_screen_text"
+        android:textColor="@android:color/white"
+        android:background="@drawable/hawaii_wave"
+        android:textSize="40sp"
+        android:gravity="bottom|center"
+        android:id="@+id/splashScreenTextView"/>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_media"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.orangecoastcollege.cs273.dnovasky.alohamusic.MediaActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ukulele"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/ukulele_image_alt_text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ukulele_button_play_text"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ukuleleButton"
+        android:onClick="playMedia"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ipu"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_weight="2"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/ipu_image_alt_text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ipu_button_play_text"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ipuButton"
+        android:onClick="playMedia"/>
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/hulaVideoView"
+        android:layout_weight="2"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:text="@string/hula_button_watch_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hulaButton"
+        android:onClick="playMedia"/>
+
+</LinearLayout>
